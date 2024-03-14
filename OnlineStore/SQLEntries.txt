@@ -1,0 +1,73 @@
+INSERT INTO orders_tab(sid, order_id, userid, product_id, qty, price) 
+VALUES (0, 1, 'CoombsS', 'Arduino Micro', 2, 10.00);
+
+INSERT INTO orders_tab(sid, order_id, userid, product_id, qty, price) 
+VALUES (2, 2, 'CoombsS', 'Arduino Uno', 1, 19.00);
+
+INSERT INTO orders_tab(sid, order_id, userid, product_id, qty, price) 
+VALUES (3, 3, 'ColonH', 'Raspberry Pi', 1, 16.00);
+
+INSERT INTO orders_tab(sid, order_id, userid, product_id, qty, price) 
+VALUES (0, 2, 'MarleyD', 'Arduino Uno', 2, 38.00);
+
+INSERT INTO orders_tab(sid, order_id, userid, product_id, qty, price) 
+VALUES (0, 2, 'MarleyD', 'Arduino Nano', 1, 11.00);
+
+
+
+INSERT INTO accounts_tab(sid, userid, name_on_card, card_number, valid_month, valid_year, cvv_code, type_of_card) 
+VALUES (0,'CoombsS','Skyler Coombs',555555555,01,2029,777,'Visa');
+
+INSERT INTO accounts_tab(sid, userid, name_on_card, card_number, valid_month, valid_year, cvv_code, type_of_card) 
+VALUES (0,'ColonH','Hannah Colon',2222222222,05,2024,222,'Master Card');
+
+INSERT INTO accounts_tab(sid, userid, name_on_card, card_number, valid_month, valid_year, cvv_code, type_of_card) 
+VALUES (0,'MarleyD','Damian Marley',1111111111,11,1979,888,'Visa');
+
+INSERT INTO accounts_tab(sid, userid, name_on_card, card_number, valid_month, valid_year, cvv_code, type_of_card) 
+VALUES (0,'MarleyB','Bob Marley',4444444444,05,2026,444,'Master Card');
+
+INSERT INTO accounts_tab(sid, userid, name_on_card, card_number, valid_month, valid_year, cvv_code, type_of_card) 
+VALUES (0,'SmithJ','John Smith',9999999999,08,2024,999,'Discover');
+
+
+
+INSERT INTO product_tab(sid, product_id, product_name, unit_price, qty_in_stock, category, vendor) 
+VALUES (0,1,'Arduino Uno',19.00,23,'Microcontroller','Arduino');
+
+INSERT INTO product_tab(sid, product_id, product_name, unit_price, qty_in_stock, category, vendor) 
+VALUES (0,2,'Raspberry Pi',20.00,10,'Microcontroller','Raspberry');
+
+INSERT INTO product_tab(sid, product_id, product_name, unit_price, qty_in_stock, category, vendor) 
+VALUES (0,3,'MSP430',15.00,12,'Microcontroller','Texas Instruments');
+
+INSERT INTO product_tab(sid, product_id, product_name, unit_price, qty_in_stock, category, vendor) 
+VALUES (0,4,'ESP 32',20.00,3,'Microcontroller','Espressif');
+
+INSERT INTO product_tab(sid, product_id, product_name, unit_price, qty_in_stock, category, vendor) 
+VALUES (0,5,'Raspberry Pico',10.00,11,'Microcontroller','Raspberry');
+
+INSERT INTO product_tab(sid, product_id, product_name, unit_price, qty_in_stock, category, vendor) 
+VALUES (0,6,'Arduino Nano',13.00,32,'Microcontroller','Arduino');
+
+
+
+
+INSERT INTO users_tab(sid, userid, password, username, streetname, city, state, zip_code, contact_number, contact_email)
+ VALUES (0,'CoombsS','123Bob','SkyC','University','Siloam Springs','AR','72761','555-555-5555]','Coombs@bob.com');
+ 
+ 
+INSERT INTO users_tab(sid, userid, password, username, streetname, city, state, zip_code, contact_number, contact_email)
+ VALUES (0,'ColonH','GoodOmensRox','Colon','WhoKnows','Siloam Springs','AR','72761','222-111-3333]','ColonH@bju.com');
+ 
+
+INSERT INTO users_tab(sid, userid, password, username, streetname, city, state, zip_code, contact_number, contact_email)
+ VALUES (0,'MarleyD','312Bob','DamianM','Kings-road','Kingston','Jamaica','12343','111-111-1111]','MarleyD@tuffGong.com');
+ 
+ 
+INSERT INTO users_tab(sid, userid, password, username, streetname, city, state, zip_code, contact_number, contact_email)
+ VALUES (0,'MarleyB','111Bob','BobM','Kings-road','Kingston','Jamaica','12343','555-555-4444]','MarleyB@tuffGong.com');
+ 
+ 
+INSERT INTO users_tab(sid, userid, password, username, streetname, city, state, zip_code, contact_number, contact_email)
+ VALUES (0,'SmithJ','312Smith','JohnS','Turnberry','Smithington','AR','74732','432-423-4322]','JohnSmith@generic.com');
